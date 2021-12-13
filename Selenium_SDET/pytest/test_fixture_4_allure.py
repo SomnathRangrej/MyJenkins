@@ -15,7 +15,7 @@ class TestLogin:
     @allure.severity(allure.severity_level.CRITICAL)
     def test_HomeTitle(self, setup):
         self.driver.get("https://opensource-demo.orangehrmlive.com/")
-        if self.driver.title == "OrangeHRM123":
+        if self.driver.title == "OrangeHRM":
             assert True
         else:
             allure.attach(self.driver.get_screenshot_as_png(), name="test_HomeTitle.png", attachment_type=AttachmentType.PNG)
