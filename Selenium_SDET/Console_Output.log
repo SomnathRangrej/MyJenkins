@@ -1,0 +1,105 @@
+Console Output
+Started by user SOMNATH RANGREJ
+Running as SYSTEM
+Building in workspace C:\Users\rangr\.jenkins\workspace\Selenium_SDET
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\bin\git.exe rev-parse --resolve-git-dir C:\Users\rangr\.jenkins\workspace\Selenium_SDET\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/SomnathRangrej/MyJenkins.git # timeout=10
+Fetching upstream changes from https://github.com/SomnathRangrej/MyJenkins.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.34.1.windows.1'
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/SomnathRangrej/MyJenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision c864e9e2436f9de5ae56007aeb3094d85fea86a5 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f c864e9e2436f9de5ae56007aeb3094d85fea86a5 # timeout=10
+Commit message: "Pass"
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 3a85182721decaa8525f2457e35a6b7ac1736e71 # timeout=10
+[Selenium_SDET] $ cmd /c call C:\Users\rangr\AppData\Local\Temp\jenkins4472238155520279804.bat
+
+C:\Users\rangr\.jenkins\workspace\Selenium_SDET>pytest -v 
+============================= test session starts =============================
+platform win32 -- Python 3.8.10, pytest-6.2.5, py-1.11.0, pluggy-0.13.1 -- c:\users\rangr\appdata\local\programs\python\python38\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.8.10', 'Platform': 'Windows-10-10.0.19042-SP0', 'Packages': {'pytest': '6.2.5', 'py': '1.11.0', 'pluggy': '0.13.1'}, 'Plugins': {'allure-pytest': '2.9.45', 'forked': '1.3.0', 'html': '3.1.1', 'metadata': '1.11.0', 'xdist': '2.4.0'}, 'CI': 'true', 'BUILD_NUMBER': '5', 'BUILD_ID': '5', 'BUILD_URL': 'http://localhost:8080/job/Selenium_SDET/5/', 'NODE_NAME': 'built-in', 'JOB_NAME': 'Selenium_SDET', 'BUILD_TAG': 'jenkins-Selenium_SDET-5', 'EXECUTOR_NUMBER': '0', 'JENKINS_URL': 'http://localhost:8080/', 'WORKSPACE': 'C:\\Users\\rangr\\.jenkins\\workspace\\Selenium_SDET', 'GIT_COMMIT': 'c864e9e2436f9de5ae56007aeb3094d85fea86a5', 'GIT_URL': 'https://github.com/SomnathRangrej/MyJenkins.git', 'GIT_BRANCH': 'origin/master'}
+rootdir: C:\Users\rangr\.jenkins\workspace\Selenium_SDET
+plugins: allure-pytest-2.9.45, forked-1.3.0, html-3.1.1, metadata-1.11.0, xdist-2.4.0
+collecting ... collected 12 items
+
+Selenium_SDET/pytest/test_demo.py::test_method1 PASSED                   [  8%]
+Selenium_SDET/pytest/test_demo.py::test_method2 PASSED                   [ 16%]
+Selenium_SDET/pytest/test_fixture_1.py::test_method1 PASSED              [ 25%]
+Selenium_SDET/pytest/test_fixture_1.py::test_method2 PASSED              [ 33%]
+Selenium_SDET/pytest/test_fixture_1.py::test_method3 PASSED              [ 41%]
+Selenium_SDET/pytest/test_fixture_2.py::test_method1 PASSED              [ 50%]
+Selenium_SDET/pytest/test_fixture_2.py::test_method2 PASSED              [ 58%]
+Selenium_SDET/pytest/test_fixture_2.py::test_method3 PASSED              [ 66%]
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_HomeTitle PASSED [ 75%]
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_login PASSED     [ 83%]
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_HomeTitle PASSED [ 91%]
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_login PASSED [100%]
+
+============================== warnings summary ===============================
+Selenium_SDET\pytest\test_fixture_2.py:3
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_2.py:3: PytestDeprecationWarning: @pytest.yield_fixture is deprecated.
+  Use @pytest.fixture instead; they are the same.
+    @pytest.yield_fixture()
+
+Selenium_SDET\pytest\test_fixture_3.py:8
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_3.py:8: DeprecationWarning: invalid escape sequence \M
+    self.driver = webdriver.Chrome(executable_path="D:\MyGitHub\MyGitHub\MySeleniumScripts\drivers\chromedriver_win32\chromedriver.exe")
+
+Selenium_SDET\pytest\test_fixture_4_allure.py:11
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_4_allure.py:11: DeprecationWarning: invalid escape sequence \M
+    self.driver = webdriver.Chrome(executable_path="D:\MyGitHub\MyGitHub\MySeleniumScripts\drivers\chromedriver_win32\chromedriver.exe")
+
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_HomeTitle
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_3.py:8: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+    self.driver = webdriver.Chrome(executable_path="D:\MyGitHub\MyGitHub\MySeleniumScripts\drivers\chromedriver_win32\chromedriver.exe")
+
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_3.py:18: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    self.driver.find_element_by_id("txtUsername").send_keys("Admin")
+
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_3.py:19: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    self.driver.find_element_by_id("txtPassword").send_keys("admin123")
+
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_3.py:20: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    self.driver.find_element_by_id("btnLogin").click()
+
+Selenium_SDET/pytest/test_fixture_3.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_3.py:21: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    assert self.driver.find_element_by_xpath("//*[@id ='menu_admin_viewAdminModule']/b").is_enabled() == True
+
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_HomeTitle
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_4_allure.py:11: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+    self.driver = webdriver.Chrome(executable_path="D:\MyGitHub\MyGitHub\MySeleniumScripts\drivers\chromedriver_win32\chromedriver.exe")
+
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_4_allure.py:27: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    self.driver.find_element_by_id("txtUsername").send_keys("Admin")
+
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_4_allure.py:28: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    self.driver.find_element_by_id("txtPassword").send_keys("admin123")
+
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_4_allure.py:29: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    self.driver.find_element_by_id("btnLogin").click()
+
+Selenium_SDET/pytest/test_fixture_4_allure.py::TestLogin::test_login
+  C:\Users\rangr\.jenkins\workspace\Selenium_SDET\Selenium_SDET\pytest\test_fixture_4_allure.py:30: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+    assert self.driver.find_element_by_xpath("//*[@id ='menu_admin_viewAdminModule']/b").is_enabled() == True
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+====================== 12 passed, 15 warnings in 27.16s =======================
+
+C:\Users\rangr\.jenkins\workspace\Selenium_SDET>exit 0 
+Process leaked file descriptors. See https://www.jenkins.io/redirect/troubleshooting/process-leaked-file-descriptors for more information
+Finished: SUCCESS
