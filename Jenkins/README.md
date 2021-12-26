@@ -2,7 +2,7 @@
 - ID: Admin
 - Name: SOMNATH RANGREJ
 - Email: rangrejsomnath19@gmail.com
-- Pass: 1DS@sr19
+- Pass: 
 
 - How to run Jenkins on my machine locally:
   - E:\Soft>java -jar jenkins.war
