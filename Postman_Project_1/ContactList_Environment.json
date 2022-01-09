@@ -1,0 +1,27 @@
+{
+	"id": "ec68f03d-fbaf-432f-9cb1-cbaf97c65892",
+	"name": "Contact_LIST_ENV_VAR",
+	"values": [
+		{
+			"key": "FirstName",
+			"value": "SOMNATH",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "LastName",
+			"value": "RANGREJ",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "contact_ID",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-01-09T02:43:33.637Z",
+	"_postman_exported_using": "Postman/9.8.2"
+}
