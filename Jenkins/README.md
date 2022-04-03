@@ -36,3 +36,5 @@
 	docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword   # To get initial password printed on screen
 
 	
+
+	
