@@ -8,7 +8,7 @@ class TestLogin:
 
     @pytest.fixture()
     def setup(self):
-        self.driver = webdriver.Chrome(executable_path="D:\MyGitHub\MyGitHub\MySeleniumScripts\drivers\chromedriver_win32\chromedriver.exe")
+        self.driver = webdriver.Chrome()
         yield
         self.driver.close()
 
