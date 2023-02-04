@@ -38,7 +38,7 @@
 	
 - Created Pipeline of 3 jobs tied together
 
-	- ![Pipeline using Jenkins plugin: delivery pipeline plugin](/Jenkins/Learning_Jenkins/Pipeline_job_output.jpg)
+	- ![Pipeline using Jenkins plugin: delivery pipeline plugin](/Jenkins/pipeline.jpg)
 
 	- YouTube reference: https://youtu.be/FOmn_rwtVF0
 	
